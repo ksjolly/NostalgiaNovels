@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nostalgia Novels</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="nostalgia-novels.css" />
+
+</head>
+<body>
+  <div id="maintenance-notice" class="bg-info">
+    <div class="container">
+      <h2> Bookfest Coming Mar 13!</a></h2>
+      <p class = "cardp" ><a style="color: white" href="https://www.thebookfest.com/">Sign up on their website for more details! </a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row my-4">
+      <div class="text-center col-12">
+        <h1 class="text-6xl text-primary font-bold mt-20"> Novel Nostalgia <span class="text-active">App</span></h1>
+        <h2 class="text-active text-primary text-2xl mt-6">Feeling nostalgic? Enter a year to see a random selection of bestselling novels.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <form id="best-books-form">
+          <div class="form-group mb-2">
+            <!-- <label for="year">Year:</label> -->
+            <input 
+              id="year"
+              name="year" 
+              class="flex w-full rounded-lg px-5 py-3 text-base text-background font-semibold focus:outline-none focus:ring-2 focus:ring-active" 
+              type="text" 
+              pattern="\d{4}" 
+              placeholder="Enter a year between 2009 and 2022..." 
+              oninput = "checkValidity();"
+              required/>
+          </div>
+          <div class="form-group mb-2"  style="text-align:center">
+            <input id="submit" class="btn btn-primary" type="submit" value="Get Books" />
+          </div>
+        </form>
+      </div>
+      <div id="books-container">
+        display books here
+
+      </div>
+      </div>
+  </div>
+
+  <script src="nostalgia-novels.js"></script>
+</body>
+</html>
