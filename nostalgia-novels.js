@@ -100,11 +100,11 @@ formEl.addEventListener('submit', function (e) {
       //console.log('did we get here', book);
       bookEl.innerHTML 
         = `<section> <div class = "flex-container">
-        <div class = "card"> <img class="dogimage" src="${books[0].book_image}"><div class = "container"> <h3 class = "h3-title"> ${books[0].title} </h3>  <h5> ${books[0].author} </h5> <p class = "cardp"> ${books[0].description} </p> </div> </div>
-        <div class = "card"> <img class="dogimage" src="${books[1].book_image}"> <div class = "container"> <h3 class = "h3-title"> ${books[1].title} </h3> <h5> ${books[1].author} </h5> <p class = "cardp"> ${books[1].description} </p> </div> </div>
-        <div class = "card"> <img class="dogimage" src="${books[2].book_image}"> <div class = "container"> <h3 class = "h3-title"> ${books[2].title} </h3> <h5> ${books[2].author} </h5> <p class = "cardp"> ${books[2].description} </p> </div> </div>
-        <div class = "card"> <img class="dogimage" src="${books[3].book_image}"> <div class = "container"> <h3 class = "h3-title"> ${books[3].title} </h3>  <h5> ${books[3].author} </h5> <p class = "cardp"> ${books[3].description} </p></div></div>
-        <div class = "card"> <img class="dogimage" src="${books[4].book_image}"> <div class = "container"> <h3 class = "h3-title"> ${books[4].title} </h3> <h5> ${books[4].author} </h5> <p class = "cardp"> ${books[4].description} </p></div></div> 
+        <div class = "card"> <a href="${books[0].amazon_product_url}"> <img class="dogimage" src="${books[0].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[0].title} </h3>  <h5> ${books[0].author} </h5> <p class = "cardp"> ${books[0].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[1].amazon_product_url}"> <img class="dogimage" src="${books[1].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[1].title} </h3> <h5> ${books[1].author} </h5> <p class = "cardp"> ${books[1].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[2].amazon_product_url}"> <img class="dogimage" src="${books[2].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[2].title} </h3> <h5> ${books[2].author} </h5> <p class = "cardp"> ${books[2].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[3].amazon_product_url}"> <img class="dogimage" src="${books[3].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[3].title} </h3>  <h5> ${books[3].author} </h5> <p class = "cardp"> ${books[3].description} </p></div></div>
+        <div class = "card"> <a href="${books[4].amazon_product_url}"> <img class="dogimage" src="${books[4].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[4].title} </h3> <h5> ${books[4].author} </h5> <p class = "cardp"> ${books[4].description} </p></div></div> 
         </div> </section>`
     });
 });
