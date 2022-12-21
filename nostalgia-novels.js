@@ -64,6 +64,13 @@ formEl.addEventListener('submit', function (e) {
   let month = monthandday.getMonth();
   let date = monthandday.getDay();
 
+  const val1 = Math.floor(Math.random() * 15);
+  const val2 = (val1 + 1) % 15;
+  const val3 = (val2 + 1) % 15;
+  const val4 = (val3 + 1) % 15;
+  const val5 = (val4 + 1) % 15;
+  
+
   if(month.toString().length == 1)
   {
     month = "0" + month.toString();
@@ -100,11 +107,11 @@ formEl.addEventListener('submit', function (e) {
       //console.log('did we get here', book);
       bookEl.innerHTML 
         = `<section> <div class = "flex-container">
-        <div class = "card"> <a href="${books[0].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[0].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[0].title} </h3>  <h5> ${books[0].author} </h5> <p class = "cardp"> ${books[0].description} </p> </div> </div>
-        <div class = "card"> <a href="${books[1].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[1].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[1].title} </h3> <h5> ${books[1].author} </h5> <p class = "cardp"> ${books[1].description} </p> </div> </div>
-        <div class = "card"> <a href="${books[2].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[2].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[2].title} </h3> <h5> ${books[2].author} </h5> <p class = "cardp"> ${books[2].description} </p> </div> </div>
-        <div class = "card"> <a href="${books[3].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[3].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[3].title} </h3>  <h5> ${books[3].author} </h5> <p class = "cardp"> ${books[3].description} </p></div></div>
-        <div class = "card"> <a href="${books[4].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[4].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[4].title} </h3> <h5> ${books[4].author} </h5> <p class = "cardp"> ${books[4].description} </p></div></div> 
+        <div class = "card"> <a href="${books[val1].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[val1].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[val1].title} </h3>  <h5> ${books[val1].author} </h5> <p class = "cardp"> ${books[val1].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[val2].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[val2].book_image}"> </a> <div class = "container"> <h3 class = "h3-title"> ${books[val2].title} </h3> <h5> ${books[val2].author} </h5> <p class = "cardp"> ${books[val2].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[val3].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[val3].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[val3].title} </h3> <h5> ${books[val3].author} </h5> <p class = "cardp"> ${books[val3].description} </p> </div> </div>
+        <div class = "card"> <a href="${books[val4].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[val4].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[val4].title} </h3>  <h5> ${books[val4].author} </h5> <p class = "cardp"> ${books[val4].description} </p></div></div>
+        <div class = "card"> <a href="${books[val5].amazon_product_url}" target="_blank"> <img class="dogimage" src="${books[val5].book_image}"> </a><div class = "container"> <h3 class = "h3-title"> ${books[val5].title} </h3> <h5> ${books[val5].author} </h5> <p class = "cardp"> ${books[val5].description} </p></div></div> 
         </div> </section>`
     });
 });
