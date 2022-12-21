@@ -70,6 +70,10 @@ formEl.addEventListener('submit', function (e) {
   const val4 = (val3 + 1) % 15;
   const val5 = (val4 + 1) % 15;
   
+  console.log('val1 is', val1);
+  console.log('val2 is', val2);
+  console.log('val5 is', val5);
+
 
   if(month.toString().length == 1)
   {
